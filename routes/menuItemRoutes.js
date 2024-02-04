@@ -37,7 +37,7 @@ router.get('/:taste', async (req, res) =>{
             console.log('response fetched');
             res.status(200).json(response);
         }else{
-            res.status(404).json({error: 'Invalid Taste type'});
+            res.status(404).json({error: 'Invalid Taste type !'});
         }
     }catch(err){
         console.log(err);
@@ -80,9 +80,9 @@ router.delete('/:id', async (req, res) => {
         res.status(200).json({message: 'Menu Deleted Successfully'});
     }catch(err){
         console.log(err);
-        res.status(500).json({error: 'Internal Server Error'});
+        res.status(500).json({error: 'Internal Server Error !!!'});
     }
 })
 
-// comment added for testing purposes
+// commit added for testing 
 module.exports = router;
