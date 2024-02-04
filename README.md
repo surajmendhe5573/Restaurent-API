@@ -1,6 +1,6 @@
-# Node Hotel Application
+# Node Restaurent Application
 
-The **Node Hotel** application is a Node.js-based system developed using the Express.js framework, with MongoDB as the chosen database. This application manages information related to persons (staff) and menu items. It exposes specific endpoints to handle CRUD (Create, Read, Update, Delete) operations for both persons and menu items.
+The **Node Restaurent** application is a Node.js-based system developed using the Express.js framework, with MongoDB as the chosen database. This application manages information related to persons (staff) and menu items. It exposes specific endpoints to handle CRUD (Create, Read, Update, Delete) operations for both persons and menu items.
 
 ## Endpoints
 
@@ -66,7 +66,7 @@ The `Person` data model represents information about staff members in the hotel.
     "name": "John Doe",
     "age": 30,
     "work": "waiter",
-    "mobile": "123-456-7890",
+    "mobile": "123567890",
     "email": "john@example.com",
     "address": "123 Main Street",
     "salary": 30000
@@ -80,18 +80,14 @@ The `MenuItem` data model represents information about menu items available in t
   - `name`: String (Item's name)
   - `price`: Number (Item's price)
   - `taste`: Enum (Item's taste, such as sweet, spicy, sour)
-  - `is_drink`: Boolean (Indicates if the item is a drink, default is `false`)
-  - `ingredients`: Array of Strings (List of ingredients, default is an empty array)
   - `num_sales`: Number (Number of sales for the item, default is `0`)
 
 - **Example:**
   ```json
   {
     "name": "Spicy Chicken Curry",
-    "price": 12.99,
+    "price": 1200,
     "taste": "spicy",
-    "is_drink": false,
-    "ingredients": ["chicken", "spices", "vegetables"],
     "num_sales": 50
   }
 
