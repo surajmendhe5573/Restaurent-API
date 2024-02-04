@@ -1,4 +1,4 @@
-# Node Hotel Application
+# Node Restaurent Application
 
 The **Node Hotel** application is a Node.js-based system developed using the Express.js framework, with MongoDB as the chosen database. This application manages information related to persons (staff) and menu items. It exposes specific endpoints to handle CRUD (Create, Read, Update, Delete) operations for both persons and menu items.
 
@@ -80,8 +80,6 @@ The `MenuItem` data model represents information about menu items available in t
   - `name`: String (Item's name)
   - `price`: Number (Item's price)
   - `taste`: Enum (Item's taste, such as sweet, spicy, sour)
-  - `is_drink`: Boolean (Indicates if the item is a drink, default is `false`)
-  - `ingredients`: Array of Strings (List of ingredients, default is an empty array)
   - `num_sales`: Number (Number of sales for the item, default is `0`)
 
 - **Example:**
@@ -90,8 +88,6 @@ The `MenuItem` data model represents information about menu items available in t
     "name": "Spicy Chicken Curry",
     "price": 12.99,
     "taste": "spicy",
-    "is_drink": false,
-    "ingredients": ["chicken", "spices", "vegetables"],
     "num_sales": 50
   }
 
