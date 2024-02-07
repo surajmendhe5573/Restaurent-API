@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const mongoURL = 'mongodb://localhost:27017/Restaurent'
+// const mongoURL = 'mongodb+srv://SurajM:Suraj777@cluster0.vdhcphr.mongodb.net/'
 
 // Set up MongoDB connection
 mongoose.connect(mongoURL, {
@@ -20,7 +21,7 @@ db.on('connected', () => {
 });
 
 db.on('error', (err) => {
-    console.error('MongoDB connection error:', err);
+    console.error('MongoDB connection error:', err);  // github
 });
 
 db.on('disconnected', () => {
