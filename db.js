@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-// Define the MongoDB connection URL
-// const mongoURL = process.env.MONGODB_URL_LOCAL // Replace 'mydatabase' with your database name
 const mongoURL = 'mongodb://localhost:27017/Restaurent'
+
 // Set up MongoDB connection
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,
@@ -30,4 +29,6 @@ db.on('disconnected', () => {
 
 // Export the database connection
 module.exports = db;
+
+// this is suraj mendhe
 
